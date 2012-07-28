@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/counterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/counterButtonMinus"
+        android:text="0"
+        android:onClick="incrementNumber" 
+        android:background="#00ff00"
+        android:textColor="#000000"
+        android:textSize="100sp" />
+
+    <Button
+        android:id="@+id/counterButtonMinus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/counterButtonReset"
+        android:background="#ffff00"
+        android:onClick="decrementNumber" />
+
+    <Button
+        android:id="@+id/counterButtonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff0000"
+        android:onClick="resetNumber" />
+
+</RelativeLayout>
